@@ -652,3 +652,5 @@ Once we're done scaling down `blue` we want to verify if we can access version `
     {"host": "52.25.126.14:10080", "version": "1.0", "result": "all is well"}
 
 And indeed we can. Since the exact mechanics of the deployment orchestration are rather complex, I recommend using [zdd.py](https://github.com/mesosphere/marathon-lb#zero-downtime-deployments) a script that makes respective API calls to the DC/OS System Marathon as well as takes care of gracefully terminating instances using the HAProxy stats endpoint.
+
+*NOTE*: This lab is based on the work from [mhausenblas](https://github.com/mhausenblas/zdd-lab).
