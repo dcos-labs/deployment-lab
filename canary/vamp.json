@@ -1,0 +1,17 @@
+{
+  "id": "vamp/vamp",
+  "instances": 1,
+  "cpus": 0.5,
+  "mem": 1024,
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "magneticio/vamp:0.9.0-dcos",
+      "network": "HOST",
+      "forcePullImage": true
+    }
+  },
+  "acceptedResourceRoles": [
+    "slave_public"
+  ]
+}
